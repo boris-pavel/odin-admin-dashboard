@@ -1,0 +1,11 @@
+svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.profile>.profile-picture {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    background-color: black;
+}
