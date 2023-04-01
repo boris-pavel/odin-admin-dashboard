@@ -1,11 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    font-family: 'Roboto';
+}
+
+.container {
+    display: grid;
+    grid-template:
+        "sidebar header" 2fr
+        "sidebar contentss" 8fr
+        / 1fr 6fr;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #16a34a;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.path {
+    padding: 0.5rem;
+}
+
+.header {
+    position: relative;
+    z-index: 1;
+    grid-area: header;
+    display: grid;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.title>svg {
+    width: 5rem;
+    height: 5rem;
+}
+
+svg {
+    fill: white;
+}
+
+.top,
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+button {
+    border-radius: 10rem;
+    padding: 0.8rem 2.3rem;
+    background-color: #16a34a;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.contentss {
+    grid-area: contentss;
+    display: grid;
+    grid-template:
+        "projects announcements" 1fr
+        "projects trending" 1fr / 3fr 1fr;
+    background-color: #dcfce7;
+    padding: 5rem;
+}
+
+.projects {
+    grid-area: projects;
+    padding-right: 5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template: auto auto / auto auto;
+    gap: 3rem;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.announcement-cards,
+.persons {
+    justify-self: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.trending {
+    grid-area: trending;
+}
+
 svg {
     width: 2rem;
     height: 2rem;
 }
 
 .profile>.profile-picture {
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 100%;
     background-color: black;
+}
+
+.profile-picture {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+}
+
+.profile {
+    display: flex;
+
+    padding: 0rem 1rem;
+    gap: 2rem;
+}
+
+.top .profile-picture {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.greetings {
+    display: flex;
+    gap: 2rem;
+}
+
+.greeting {
+    font-weight: bold;
+}
+
+.greeting p {
+    margin-bottom: 0.3rem;
+}
+
+.profile-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.profile>.profile-name {
+    font-size: 1.5rem;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-management {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+.path {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding-left: 0;
+}
+
+.header svg {
+    fill: black;
+}
+
+.content svg {
+    fill: black;
+}
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 1rem solid #052e16;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+input {
+    background-color: #dcfce7;
+    width: 50vw;
+    height: 2rem;
+    border-radius: 10rem;
+}
+
+.announcements .announcement:nth-child(1),
+.announcements .announcement:nth-child(2) {
+    border-bottom: 3px solid #dcfce7;
+}
+
+.persons {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+.announcement-cards {
+    font-size: 0.8rem;
+}
+
+ul {
+    padding: 0;
+}
+
+.card svg {
+    fill: black;
+}
+
+.card {
+    display: grid;
+}
+
+.icons {
+    justify-self: flex-end;
+}
+
+.nav-1{
+    padding: 2rem 0rem;
 }
