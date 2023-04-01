@@ -4,6 +4,9 @@
     font-family: 'Roboto';
 }
 
+* {
+    box-sizing: border-box;
+}
 .container {
     display: grid;
     grid-template:
@@ -18,11 +21,11 @@
     color: white;
     font-weight: bold;
     font-size: 1.5rem;
-    padding: 2rem;
+    padding: 3%;
 }
 
 .path {
-    padding: 0.5rem;
+    padding: 5%;
 }
 
 .header {
@@ -34,8 +37,8 @@
 }
 
 .title>svg {
-    width: 5rem;
-    height: 5rem;
+    width: 20%;
+    height: 20%;
 }
 
 svg {
@@ -47,12 +50,12 @@ svg {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5rem;
+    padding: 0% 2%;
 }
 
 button {
-    border-radius: 10rem;
-    padding: 0.8rem 2.3rem;
+    border-radius: 30px;
+    padding: 1rem 2rem;
     background-color: #16a34a;
     color: white;
     font-weight: bold;
@@ -66,31 +69,37 @@ button {
         "projects announcements" 1fr
         "projects trending" 1fr / 3fr 1fr;
     background-color: #dcfce7;
-    padding: 5rem;
+    padding: 5%;
 }
 
 .projects {
     grid-area: projects;
-    padding-right: 5rem;
+    padding-right: 5%;
 }
 
 .cards {
     display: grid;
     grid-template: auto auto / auto auto;
-    gap: 3rem;
+    gap: 3%;
 }
 
 .announcements {
     grid-area: announcements;
 }
 
-.announcement-cards,
-.persons {
+.announcement-cards {
     justify-self: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: white;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 2%;
+}
+
+.persons {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2%;
 }
 
 .trending {
@@ -98,8 +107,8 @@ button {
 }
 
 svg {
-    width: 2rem;
-    height: 2rem;
+    width: 10%;
+    height: 10%;
 }
 
 .profile>.profile-picture {
@@ -110,26 +119,26 @@ svg {
 }
 
 .profile-picture {
-    width: 7rem;
-    height: 7rem;
+    width: 17%;
+    height: 17%;
     border-radius: 100%;
 }
 
 .profile {
     display: flex;
-
-    padding: 0rem 1rem;
-    gap: 2rem;
+    align-items: center;
+    padding-left: 5%;
+    gap: 5%;
 }
 
 .top .profile-picture {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .greetings {
     display: flex;
-    gap: 2rem;
+    gap: 4%;
 }
 
 .greeting {
@@ -137,7 +146,7 @@ svg {
 }
 
 .greeting p {
-    margin-bottom: 0.3rem;
+    margin-bottom: 1%;
 }
 
 .profile-name {
@@ -157,16 +166,15 @@ svg {
 }
 
 .project-management {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
 }
 
 .title {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1%;
     font-size: 1rem;
 }
 
@@ -177,7 +185,7 @@ li {
 .path {
     display: flex;
     align-items: center;
-    gap: 0.7rem;
+    gap: 5%;
     padding-left: 0;
 }
 
@@ -191,17 +199,17 @@ li {
 
 .card {
     background-color: white;
-    padding: 2rem;
     border-radius: 10px;
     border-left: 1rem solid #052e16;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2%
 }
 
 input {
     background-color: #dcfce7;
     width: 50vw;
-    height: 2rem;
-    border-radius: 10rem;
+    height: 30%;
+    border-radius: 10px;
 }
 
 .announcements .announcement:nth-child(1),
@@ -211,12 +219,18 @@ input {
 
 .persons {
     background-color: white;
+    padding: 3%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
 }
 
 .announcement-cards {
     font-size: 0.8rem;
+}
+
+.search svg {
+    width: 5%;
+    height: 5%;
 }
 
 ul {
@@ -235,6 +249,15 @@ ul {
     justify-self: flex-end;
 }
 
+.icons > svg {
+    width: 2rem;
+    height: 2rem;
+}
+
 .nav-1{
-    padding: 2rem 0rem;
+    padding: 2% 0%;
+}
+
+.announcement-cards {
+    padding: 5%;
 }
