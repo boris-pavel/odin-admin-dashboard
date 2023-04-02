@@ -75,16 +75,20 @@ button {
 .projects {
     grid-area: projects;
     padding-right: 5%;
+    display: grid;
+    grid-template-rows: max-content;
 }
 
 .cards {
     display: grid;
-    grid-template: auto auto / auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 3%;
 }
 
 .announcements {
     grid-area: announcements;
+    align-self: flex-start;
 }
 
 .announcement-cards {
@@ -104,6 +108,7 @@ button {
 
 .trending {
     grid-area: trending;
+    align-self: flex-end;
 }
 
 svg {
